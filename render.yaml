@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: instabot
+    env: python
+    buildCommand: "pip install -r requirements.txt"
+    startCommand: "python instabot.py"
+    repo: https://github.com/ogabek803/instabot
+    branch: master
+    plan: free
+    autoDeploy: true
